@@ -107,7 +107,7 @@ shared.Saved = {
 
     ['Misc'] = {
         ['Indicators'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
         },
     },
 
@@ -166,25 +166,27 @@ shared.Saved = {
 },
 
 
-    ['Spread Modifiers'] = {
+['Spread Modifications'] = {
         ['Enabled'] = true,
-        ['Double-Barrel SG'] = {
-            Multiplier = 1
+        ['Method'] = 'randomized', -- basic, randomized
+
+        ['DoubleBarrelSG'] = {
+            ['Spread'] = 0.2, ['Random'] = { ['Min'] = 0.67, ['Max'] = 0.80 },
         },
         ['TacticalShotgun'] = {
-            Multiplier = 1
+            ['Spread'] = 0.2, ['Random'] = { ['Min'] = 0.70, ['Max'] = 0.80 },
         },
-        ['Shotgun'] = {
-            Multiplier = 1
-        }
+        ['DrumShotgun'] = {
+            ['Spread'] = 0.2, ['Random'] = { ['Min'] = 0.64, ['Max'] = 0.80 },
+        },
     },
 
     ['Movement Modifications'] = {
         ['Speed Modifications'] = {
             ['Enabled'] = true,
-            ['Normal'] = { ['Multiplier'] = 1.15 },
-            ['Reloading'] = {['Multiplier'] = 1.04 },
-            ['Shooting'] = {['Multiplier'] = 1.04 }
+            ['Normal'] = { ['Multiplier'] = 1.08 },
+            ['Reloading'] = {['Multiplier'] = 1.1},
+            ['Shooting'] = {['Multiplier'] = 1.1}
         }
     }
 }
