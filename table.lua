@@ -13,6 +13,11 @@ shared.Saved = {
         ['Enabled'] = true,
         ['Mode'] = "Target", -- Target // Auto
         ['HitPart'] = "ClosestPoint",
+
+    ['Silent Settings'] = {
+        ['Knocked'] = true,
+        ['Self Knocked'] = true
+    },
         
         ['ClosestPoint'] = {
             ['Mode'] = 'Advanced',
@@ -24,9 +29,6 @@ shared.Saved = {
             ['Y'] = 0.15,
             ['Z'] = 0.15
         },
-        
-        ['PredictionPower'] = 0,
-        
         
         ['Showfov'] = true,
         
