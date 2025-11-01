@@ -1,32 +1,32 @@
 shared.Saved = {
     ["Binds"] = {
-        ['Toggle'] = "None", -- Keybind
-        ['Camlock Toggle'] = "None",
-        ['Triggerbot'] = "None",
-        ['Visuals'] = "None",
-        ['SpeedModToggle'] = "None", 
-        ['SpeedIncrease'] = "None", 
-        ['SpeedDecrease'] = "None", 
+        ['Toggle'] = "", -- Don't leave this blank
+        ['Camlock Toggle'] = "",
+        ['Triggerbot'] = "",
+        ['Visuals'] = "",
+        ['Speed Modifications'] = "",
     },
 
     ['Silent'] = {
         ['Enabled'] = true,
-        ['Mode'] = "Target", -- Target // Auto
+        ['Mode'] = "Auto", -- Target // Auto
         ['HitPart'] = "ClosestPoint",
+
+    ['Silent Settings'] = {
+        ['Knocked'] = true,
+        ['Self Knocked'] = true
+    },
         
         ['ClosestPoint'] = {
             ['Mode'] = 'Advanced',
-            ['PointScale'] = 0.2
+            ['PointScale'] = 0.6
         },
         
         ['Prediction'] = {
-            ['X'] = 0.15,
-            ['Y'] = 0.15,
-            ['Z'] = 0.15
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0
         },
-        
-        ['PredictionPower'] = 0,
-        
         
         ['Showfov'] = true,
         
@@ -35,9 +35,9 @@ shared.Saved = {
                 ['Enabled'] = true,
 
                 ['Size'] = {
-                    ['X'] = 5,
-                    ['Y'] = 5,
-                    ['Z'] = 5,
+                    ['X'] = 3.5,
+                    ['Y'] = 5.6,
+                    ['Z'] = 2,
                 },
 
             ['Weapon Configuration'] = {
@@ -69,7 +69,6 @@ shared.Saved = {
 
     ['Anti Curve'] = {
         ['Enabled'] = false,
-        
         ['Mode'] = '3DAngles',
         ['Angle'] = 3
     },
@@ -78,8 +77,8 @@ shared.Saved = {
     ['Camlock'] = {
         ['Enabled'] = true,
         ['Hitparts'] = "ClosestPart",
-        ['Smoothness'] = 1,
-        ['Radius'] = 100,
+        ['Smoothness'] = 0.08,
+        ['Radius'] = 80,
         ['ShowFov'] = false,
         
         ['Prediction'] = {
@@ -89,7 +88,7 @@ shared.Saved = {
         },
 
         ['Camlock Settings'] = {
-            ['Sync'] = false,
+            ['Sync'] = true,
             ['FirstPerson'] = true,
             ['ThirdPerson'] = false,
             ['RightClick'] = true
@@ -116,13 +115,13 @@ shared.Saved = {
         ['Enabled'] = true,
                 
         ['User Settings'] = {
-            ['Mode'] = "Toggle",
+            ['Mode'] = "Hold",
             ['Type'] = "FOV", -- FOV // Hitbox
         },
         
         ['Delay Settings'] = {
             ['Delay Toggle'] = true,
-            ['Delay'] = 0.05,
+            ['Delay'] = 0.00,
         },
         
         ['Prediction'] = {
@@ -168,23 +167,24 @@ shared.Saved = {
 
 
     ['Spread Modifiers'] = {
-        ['Enabled'] = false,
+        ['Enabled'] = true,
         ['Double-Barrel SG'] = {
-            Multiplier = 0.2
+            Multiplier = 1
         },
         ['TacticalShotgun'] = {
-            Multiplier = 0.2
+            Multiplier = 1
         },
         ['Shotgun'] = {
-            Multiplier = 0.2
+            Multiplier = 1
         }
     },
-    
-    ["Speed Modifications"] = {
-        ["Enabled"] = false,
-        ["Walking"] = {
-            ["BaseSpeed"] = 312,  -- Set your desired base speed here
-            ["Increment"] = 4
+
+    ['Movement Modifications'] = {
+        ['Speed Modifications'] = {
+            ['Enabled'] = true,
+            ['Normal'] = { ['Multiplier'] = 1.15 },
+            ['Reloading'] = {['Multiplier'] = 1.04 },
+            ['Shooting'] = {['Multiplier'] = 1.04 }
         }
     }
 }
