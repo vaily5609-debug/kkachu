@@ -1,4 +1,4 @@
-``` -- table
+``` -- table Updated
 shared.Saved = {
     ["Binds"] = {
         ['Toggle'] = "None",
@@ -78,11 +78,7 @@ shared.Saved = {
 
     ['Camlock'] = {
         ['Enabled'] = true,
-        ['Hitparts'] = {"Head", "UpperTorso", "LowerTorso", "HumanoidRootPart",
-            "LeftUpperArm", "LeftLowerArm", "LeftHand",
-            "RightUpperArm", "RightLowerArm", "RightHand",
-            "LeftUpperLeg", "LeftLowerLeg", "LeftFoot",
-            "RightUpperLeg", "RightLowerLeg", "RightFoot"},
+        ['Hitparts'] = "ClosestPart",
         ['Smoothness'] = 1,
         ['Radius'] = 100,
         ['ShowFov'] = false,
