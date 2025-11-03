@@ -22,7 +22,6 @@ want to use spam guns? turn anti aim viewer off
 Exp :
 
 ANTI CURVE 3d Angle : lock works only when ur aiming at the target this is useful in first person only ( you can make it do sum else instead of turning off )
-Set Silent Target: this will set the silent aims target to whoever the camlock is targetting
 
 --]]
 
@@ -110,7 +109,7 @@ shared.Saved = {
         },
 
         ['Camlock Settings'] = {
-            ['Sync'] = true, -- SYNC WITH SILENT AIM
+            ['Sync'] = true, -- Camlock now automatically applies to the target acquired by silent aim. You no longer need to press the keybind to lock on
             ['FirstPerson'] = true, -- FIRSTPERSON
             ['ThirdPerson'] = false, 
             ['RightClick'] = true
