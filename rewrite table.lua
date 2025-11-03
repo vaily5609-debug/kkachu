@@ -1,3 +1,31 @@
+--[[
+--------------- [ KOREY BETA ] ---------------
+
+[ Keyboard Keys ] : https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.keys?view=windowsdesktop-8.0
+
+[ Bodyparts ] : https://create.roblox.com/docs/reference/engine/enums/BodyPartR15
+
+[ FOV ] : https://www.roblox.com/games/104850983738690/Untitled-Game
+
+
+--------------- {!! READ !!} ---------------
+
+Silent Aim :
+
+Lock = Silent Aim, Target
+
+( Setting ['Mode'] to 'Auto' Turns it into a silent Aim like 'Auto' get target )
+( Setting ['Mode'] to 'Target' Turns it into a Target Lock like 'Key' toggle get target )
+
+want to use spam guns? turn anti aim viewer off
+
+Exp :
+
+ANTI CURVE 3d Angle : lock works only when ur aiming at the target this is useful in first person only ( you can make it do sum else instead of turning off )
+Set Silent Target: this will set the silent aims target to whoever the camlock is targetting
+
+--]]
+
 shared.Saved = {
     ['Silent'] = {
         ['Enabled'] = true,
