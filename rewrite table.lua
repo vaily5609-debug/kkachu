@@ -1,5 +1,5 @@
 shared.Saved = {
-    ['Silent'] = { -- 느금마 가짬자 , 카이사짬자 , 얀말락짬자 , 카아라짬자 , 자라얌짬자 , 자수경 느금마짬자
+    ['Silent'] = {
         ['Enabled'] = true,
         ['Mode'] = "Auto", -- Target // Auto
         ['Activation Bind'] = "None", -- TARGET BIND // TYPE "NONE" IF YOUR MODE IS AUTO
@@ -12,7 +12,7 @@ shared.Saved = {
         
         ['ClosestPoint'] = {
             ['Mode'] = 'Advanced',
-            ['PointScale'] = 0.6 -- Point Scale
+            ['PointScale'] = 0.2 -- Point Scale
         },
         
         ['Prediction'] = {
@@ -28,29 +28,29 @@ shared.Saved = {
                 ['Enabled'] = true,
 
                 ['Size'] = {
-                    ['X'] = 3.5, -- W
-                    ['Y'] = 5.6, -- H
-                    ['Z'] = 2, -- D
+                    ['X'] = 5, -- W
+                    ['Y'] = 5, -- H
+                    ['Z'] = 5, -- D
                 },
 
             ['Weapon Configuration'] = {
                 ['Enabled'] = true,
 
                 ['Shotguns'] = { 
-                    ['X'] = 4.8, -- W
+                    ['X'] = 5, -- W
                     ['Y'] = 5, -- H
-                    ['Z'] = 2, -- D
+                    ['Z'] = 5, -- D
                 },
 
                 ['Pistols'] = {
-                    ['X'] = 3, -- W
-                    ['Y'] = 4, -- H
-                    ['Z'] = 2, -- D
+                    ['X'] = 5, -- W
+                    ['Y'] = 5, -- H
+                    ['Z'] = 5, -- D
                 },
 
                 ['Others'] = {
-                    ['X'] = 4, -- W
-                    ['Y'] = 4, -- H
+                    ['X'] = 5, -- W
+                    ['Y'] = 5, -- H
                     ['Z'] = 5, -- D
                 },
             },
@@ -70,14 +70,13 @@ shared.Saved = {
     ['Camlock'] = {
         ['Enabled'] = true,
         ['Mode'] = "Toggle", -- (Toggle // Hold)
-        ['Activation Bind'] = "C", -- Camlock keybind
-        ['Hitparts'] = "ClosestPart", -- Hitparts
-        ['Smoothness'] = 0.08,
-        ['Radius'] = 80, -- FOV SCALE
+        ['Activation Bind'] = "E", -- Camlock keybind
+        ['Hitparts'] = "Head", -- Hitparts
+        ['Smoothness'] = 0.324221,
         ['ShowFov'] = false,
         
         ['Prediction'] = {
-            ['X'] = 0,
+            ['X'] = 0.125,
             ['Y'] = 0,
             ['Z'] = 0
         },
@@ -88,30 +87,48 @@ shared.Saved = {
             ['ThirdPerson'] = false, 
             ['RightClick'] = true
         },
-    },
 
-    ['Hitbox'] = {
-        ['Enabled'] = false, -- HITBOX EXPANDER FOR DA HOOD
-        ['Guns'] = {
-            ['[Double-Barrel SG]'] = {H = 1, W = 1},
-            ['[Revolver]'] = {H = 1, W = 1},
-            ['[Tactical SG]'] = {H = 1, W = 1},
-            ['[Rifle]'] = {H = 1, W = 1}
+        ['FOV'] = {
+            ['FOV'] = {
+                ['Size'] = {
+                    ['X'] = 5,
+                    ['Y'] = 5,
+                    ['Z'] = 5,
+                },
+                ['Weapon Configuration'] = {
+                    ['Enabled'] = true,
+                    ['Shotguns'] = {
+                        ['X'] = 5,
+                        ['Y'] = 5,
+                        ['Z'] = 5,
+                    },
+                    ['Pistols'] = {
+                        ['X'] = 5,
+                        ['Y'] = 5,
+                        ['Z'] = 5,
+                    },
+                    ['Others'] = {
+                        ['X'] = 5,
+                        ['Y'] = 5,
+                        ['Z'] = 5,
+                    }
+                }
+            }
         }
     },
 
     ['Triggerbot'] = {
-        ['Enabled'] = true,
-        ['Activation Bind'] = "V", -- TRIGGERBOT KEYBIND
+        ['Enabled'] = false,
+        ['Activation Bind'] = "P", -- TRIGGERBOT KEYBIND
                 
         ['User Settings'] = {
             ['Mode'] = "Hold",
-            ['Type'] = "FOV", -- FOV // Hitbox
+            ['Type'] = "Hitbox", -- FOV // Hitbox
         },
         
         ['Delay Settings'] = {
             ['Delay Toggle'] = true,
-            ['Delay'] = 0.00,
+            ['Delay'] = 0.01,
         },
         
         ['Prediction'] = {
@@ -126,23 +143,23 @@ shared.Saved = {
             ['FOV'] = {
                 
              ['Size'] = {
-                ['X'] = 3.8,
-                ['Y'] = 4.8,
-                ['Z'] = 1.9,
+                ['X'] = 5,
+                ['Y'] = 5,
+                ['Z'] = 5,
             },
         
             ['Weapon Configuration'] = {
                 ['Enabled'] = false,
                 ['Shotguns'] = {
-                    ['X'] = 5.6,
-                    ['Y'] = 5.4,
-                    ['Z'] = 5.2,
+                    ['X'] = 5,
+                    ['Y'] = 5,
+                    ['Z'] = 5,
                 },
             
                 ['Pistols'] = {
-                    ['X'] = 3.5,
-                    ['Y'] = 3.8,
-                    ['Z'] = 1.2,
+                    ['X'] = 5,
+                    ['Y'] = 5,
+                    ['Z'] = 5,
                 },
             
                 ['Others'] = {
@@ -155,18 +172,28 @@ shared.Saved = {
     },
 },
 
+    ['Hitbox'] = {
+        ['Enabled'] = false, -- HITBOX EXPANDER FOR DA HOOD
+        ['Guns'] = {
+            ['[Double-Barrel SG]'] = {H = 1, W = 1},
+            ['[Revolver]'] = {H = 1, W = 1},
+            ['[Tactical SG]'] = {H = 1, W = 1},
+            ['[Rifle]'] = {H = 1, W = 1}
+        }
+    },
+
 ['Spread Modifications'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Method'] = 'randomized', -- basic, randomized
 
         ['DoubleBarrelSG'] = {
-            ['Spread'] = 0.25, ['Random'] = { ['Min'] = 0.67, ['Max'] = 0.80 }, -- MIN
+            ['Spread'] = 0.1, ['Random'] = { ['Min'] = 0.67, ['Max'] = 0.80 }, -- MIN
         },
         ['TacticalShotgun'] = {
-            ['Spread'] = 0.25, ['Random'] = { ['Min'] = 0.70, ['Max'] = 0.80 }, -- MAX
+            ['Spread'] = 0.1, ['Random'] = { ['Min'] = 0.70, ['Max'] = 0.80 }, -- MAX
         },
         ['DrumShotgun'] = {
-            ['Spread'] = 0.25, ['Random'] = { ['Min'] = 0.64, ['Max'] = 0.80 }, -- SPREAD
+            ['Spread'] = 0.1, ['Random'] = { ['Min'] = 0.64, ['Max'] = 0.80 }, -- SPREAD
         },
     },
 }
