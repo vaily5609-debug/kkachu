@@ -1,4 +1,14 @@
 --[[
+
+--------------- [ GAMES YE SUPPORT ] ---------------
+[2788229376] -- DA HOOD
+[76763558784614] -- DER HOOD
+[105767241934424] -- DEE HOOD
+[9825515356] -- HOOD CUSTOM
+[138995385694035] -- HOOD CUSTOM FFA
+[114144969678369] -- ZEE HOOD
+[105788818579323] -- DAN FFA
+
 --------------- [ KOREY BETA ] ---------------
 
 [ Keyboard Keys ] : https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.keys?view=windowsdesktop-8.0
@@ -55,30 +65,30 @@ shared.Saved = {
                 ['Enabled'] = true,
 
                 ['Size'] = {
-                    ['X'] = 5, -- W
-                    ['Y'] = 5, -- H
-                    ['Z'] = 5, -- D
+                    ['X'] = 5, -- Width
+                    ['Y'] = 5, -- Height
+                    ['Z'] = 5, -- Depth
                 },
 
             ['Weapon Configuration'] = {
                 ['Enabled'] = true,
 
                 ['Shotguns'] = { 
-                    ['X'] = 5, -- W
-                    ['Y'] = 5, -- H
-                    ['Z'] = 5, -- D
+                    ['X'] = 5, -- Width
+                    ['Y'] = 5, -- Height
+                    ['Z'] = 5, -- Depth
                 },
 
                 ['Pistols'] = {
-                    ['X'] = 5, -- W
-                    ['Y'] = 5, -- H
-                    ['Z'] = 5, -- D
+                    ['X'] = 5, -- Width
+                    ['Y'] = 5, -- Height
+                    ['Z'] = 5, -- Depth
                 },
 
                 ['Others'] = {
-                    ['X'] = 5, -- W
-                    ['Y'] = 5, -- H
-                    ['Z'] = 5, -- D
+                    ['X'] = 5, -- Width
+                    ['Y'] = 5, -- Height
+                    ['Z'] = 5, -- Depth
                 },
             },
         },
@@ -202,10 +212,10 @@ shared.Saved = {
     ['Hitbox'] = {
         ['Enabled'] = false, -- HITBOX EXPANDER FOR DA HOOD
         ['Guns'] = {
-            ['[Double-Barrel SG]'] = {H = 1, W = 1},
-            ['[Revolver]'] = {H = 1, W = 1},
-            ['[Tactical SG]'] = {H = 1, W = 1},
-            ['[Rifle]'] = {H = 1, W = 1}
+            ['[Double-Barrel SG]'] = {X = 1, Y = 1},
+            ['[Revolver]'] = {X = 1, Y = 1},
+            ['[Tactical SG]'] = {X = 1, Y = 1},
+            ['[Rifle]'] = {X = 1, Y = 1}
         }
     },
 
