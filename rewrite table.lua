@@ -110,7 +110,6 @@ shared.Saved = {
         ['Activation Bind'] = "E", -- Camlock keybind
         ['Hitparts'] = "Head", -- Hitparts
         ['Smoothness'] = 0.324221,
-        ['ShowFov'] = false,
         
         ['Prediction'] = {
             ['X'] = 0.125,
@@ -124,9 +123,12 @@ shared.Saved = {
             ['ThirdPerson'] = false, 
             ['RightClick'] = true
         },
+        
+        ['ShowFov'] = false,
 
         ['FOV'] = {
             ['FOV'] = {
+                
                 ['Size'] = {
                     ['X'] = 5,
                     ['Y'] = 5,
