@@ -134,6 +134,7 @@ shared.Saved = {
                     ['Y'] = 5,
                     ['Z'] = 5,
                 },
+                
                 ['Weapon Configuration'] = {
                     ['Enabled'] = true,
                     ['Shotguns'] = {
