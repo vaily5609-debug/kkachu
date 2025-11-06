@@ -36,6 +36,10 @@ ANTI CURVE 3d Angle : lock works only when ur aiming at the target this is usefu
 --]]
 
 shared.Saved = {
+    ['Keysystem'] = {
+        ['PlaceYourKey'] = "PLACE_YOUR_KEY_HERE"
+    },
+    
     ['Silent'] = {
         ['Enabled'] = true,
         ['Mode'] = "Auto", -- Target // Auto
